@@ -1,0 +1,29 @@
+.container {
+  margin: 0 !important;
+  padding: 10px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 500px !important;
+  background-color: beige;
+
+  background-image: url(./assets/bgc2.png);
+  background-size: 100%;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 5px !important;
+    background-size: cover !important;
+  }
+}

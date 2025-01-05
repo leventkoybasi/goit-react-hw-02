@@ -1,31 +1,32 @@
-function Option() {
+/* eslint-disable react/prop-types */
+function Option({ updateFeedback, resetScore }) {
   return (
     <>
       <div className='mt-4'>
         <button
-          id='good'
-          className='btn btn-outline-secondar px-3 py-2 m-2'
+          onClick={() => updateFeedback("good")}
+          className='btn btn-outline-dark px-3 py-2 m-2'
           style={{ border: "2px solid black" }}
         >
           Good
         </button>
         <button
-          id='neutral'
-          className='btn btn-outline-secondar px-3 py-2 m-2'
+          onClick={() => updateFeedback("neutral")}
+          className='btn btn-outline-dark px-3 py-2 m-2'
           style={{ border: "2px solid black" }}
         >
           Neutral
         </button>
         <button
-          id='bad'
-          className='btn btn-outline-secondar px-3 py-2 m-2'
+          onClick={() => updateFeedback("bad")}
+          className='btn btn-outline-dark px-3 py-2 m-2'
           style={{ border: "2px solid black" }}
         >
           Bad
         </button>
         <button
-          id='reset'
-          className='btn btn-outline-secondar px-3 py-2 m-2'
+          onClick={resetScore}
+          className='btn btn-outline-dark px-3 py-2 m-2'
           style={{ border: "2px solid black" }}
         >
           Reset

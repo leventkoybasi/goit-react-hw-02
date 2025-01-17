@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Description from "./components/Description";
 import Feedback from "./components/Feedback";
 import Option from "./components/Option";
@@ -10,6 +10,7 @@ function App() {
     try {
       return storedScore ? JSON.parse(storedScore) : { good: 0, neutral: 0, bad: 0 };
     } catch (error) {
+      console.log(error);
       return { good: 0, neutral: 0, bad: 0 };
     }
   });
